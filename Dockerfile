@@ -18,4 +18,4 @@ RUN cd orc/java && mvn package
 
 FROM openjdk:8
 
-COPY --from=builder /root/orc/build/java/tools/orc-tools-*-SNAPSHOT-uber.jar /opt/orc/
+COPY --from=builder /root/orc/java/tools/target/orc-tools-*-SNAPSHOT-uber.jar /opt/orc/
