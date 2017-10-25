@@ -9,8 +9,8 @@ RUN apt-get install -y \
   libsasl2-dev \
   libssl-dev \
   make \
-  maven \
-  openjdk-7-jdk
+  maven
+  
 WORKDIR /root
 RUN git clone https://github.com/apache/orc.git -b master --depth 1
 RUN cd java && mvn package
