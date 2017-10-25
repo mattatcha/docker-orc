@@ -13,7 +13,7 @@ RUN apt-get install -y \
   
 WORKDIR /root
 RUN git clone https://github.com/apache/orc.git -b master --depth 1
-RUN cd java && mvn package
+RUN cd orc/java && mvn package
 
 
 FROM openjdk:8
